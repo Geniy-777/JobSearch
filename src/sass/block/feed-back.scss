@@ -1,0 +1,109 @@
+.feed-back {
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 150px;
+
+    .feed-back__content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        align-items: center;
+
+        .slider {
+            width: fit-content;
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+            margin-left: 0%;
+            .feed-back__block:hover {
+                box-shadow: 0px 0px 40px #EEEEEE;
+                transform: scale(1.02);
+            }            
+
+            .feed-back__block:hover .feed-back__icon::before{
+                opacity: 0.8;
+            }
+
+            .feed-back__block {
+                width: 570px;
+                height: 500px;
+
+                background-color: #FFFFFF;
+                box-shadow: none;
+                border: 1px solid #EEEEEE;
+                border-radius: 5px;
+                padding: 50px 30px;
+                flex-basis: 570px;
+                flex-shrink:1;
+
+                transition: all .3s ease;
+
+                list-style-type: none;
+
+                .feed-back__icon {
+                    position: relative;
+                    background-image: url("../img/feed-back/feed-back-icon-disable.png");
+                    width: 37px;
+                    height: 29px;
+                    opacity: 1;
+                    transition: opacity .3s ease;
+                }
+
+                .feed-back__icon::before{
+                    content: '';
+                    background-image: url("../img/feed-back/feed-back-icon.png");
+                    position: absolute;
+
+                    left: 0;
+                    top: 0;
+
+                    width: 100%;
+                    height: 100%;
+
+                    opacity: 0;
+                    transition: opacity .3s ease;
+                }
+
+                .feed-back__person {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    margin-top: 50px;
+
+                    .feed-back-person__img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        background-color: #EEEEEE;
+                    }
+
+                    .feed-back-description-person {
+                        text-align: center;
+
+                        .feed-back-person__name {
+                            font-family: 'Georgia';
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #353540;
+
+                        }
+
+                        .feed-back-person__position {
+                            font-family: 'Axiforma';
+                            font-weight: 300;
+                            font-size: 16px;
+                            color: #5D5D61;
+                        }
+
+                        .feed-back-person__mark{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 140px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

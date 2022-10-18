@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Georgia';
+    src: local('Georgia'),
+        url('../font/Georgia.eot') format(eot),
+        url('../font/Georgia.ttf') format(ttf),
+        url('../font/Georgia.otf') format(otf),
+        url('../font/Georgia.woff') format(woff),
+        url('../font/Georgia.woff2') format(woff2),
+        url('../font/Georgia.svg') format(svg);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Axiforma';
+    src: local('Axiforma'),
+        url('../font/Axiforma-Regular.eot') format(eot),
+        url('../font/Axiforma-Regular.ttf') format(ttf),
+        url('../font/Axiforma-Regular.otf') format(otf),
+        url('../font/Axiforma-Regular.woff') format(woff),
+        url('../font/Axiforma-Regular.woff2') format(woff2),
+        url('../font/Axiforma-Regular.svg') format(svg);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Perpetua';
+    src: local('Perpetua'),
+        url('../font/perpeta.eot') format(eot),
+        url('../font/perpeta.ttf') format(ttf),
+        url('../font/perpeta.otf') format(otf),
+        url('../font/perpeta.woff') format(woff),
+        url('../font/perpeta.woff2') format(woff2),
+        url('../font/perpeta.svg') format(svg);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'),
+        url('../font/Poppins-Regular.eot') format(eot),
+        url('../font/Poppins-Regular.ttf') format(ttf),
+        url('../font/Poppins-Regular.otf') format(otf),
+        url('../font/Poppins-Regular.woff') format(woff),
+        url('../font/Poppins-Regular.woff2') format(woff2),
+        url('../font/Poppins-Regular.svg') format(svg);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    // TODO Axiforma, Perpetua, 'Poppins'
+    // 
+    src: url('');
+}

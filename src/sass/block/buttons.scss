@@ -1,0 +1,274 @@
+.btn-post {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: none;
+
+  width: 220px;
+  height: 70px;
+  background-color: transparent;
+
+  color: white;
+
+  font-family: "Axiforma", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-post::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100px;
+
+  background: #ee4f3c;
+  z-index: -2;
+}
+
+.btn-post::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  background-color: #fff;
+  transform: translateX(-120%) skew(45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-post:hover::before {
+  transform: translate(0) skew(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-post:hover {
+  //-webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  border: 1px #ee4f3c solid;
+  color: #ee4f3c;
+}
+
+.btn-post:active {
+  transform: scale(0.85);
+}
+
+.btn-search {
+  overflow: hidden;
+  position: relative;
+
+  width: 180px;
+  height: 70px;
+
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 0 10px 10px 0;
+
+  font-family: "Axiforma", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-search::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100px;
+
+  background: #ee4f3c;
+  z-index: -2;
+}
+
+.btn-search::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  background-color: #fff;
+  transform: rotate(15deg) translateY(-140%) skew(45deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-search:hover::before {
+  transform: translate(0) skew(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-search:hover {
+  //-webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  border: 1px #ee4f3c solid;
+  color: #ee4f3c;
+}
+
+.btn-search:active {
+  transform: scale(0.85);
+}
+
+.btn-create-account {
+  position: relative;
+  overflow: hidden;
+
+  margin-top: 50px;
+  width: 220px;
+  height: 70px;
+
+  background-color: transparent;
+
+  color: #fff;
+  font-family: "Axiforma", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+
+  border-radius: 10px;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+
+.btn-create-account::before,
+.btn-create-account::after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+  transition: all .4s ease-in-out;
+}
+
+.btn-create-account::after {
+  background-color: #ee4f3c;
+  z-index: -2;
+}
+
+.btn-create-account::before {
+  background-color: #fff;
+  z-index: -1;
+  transform-origin: top;
+  transform: rotate3d(1,0,0,90deg);
+}
+
+.btn-create-account:hover::before{
+    transform: rotate(0);
+}
+
+.btn-create-account:hover{
+    color: #ee4f3c;
+    border: #ee4f3c 1px solid;
+}
+
+.btn-create-account:active{
+    transform: scale(0.85);
+}
+
+.subscribe-block__btn {
+  width: 220px;
+  height: 60px;
+  padding: 15px 35px;
+  text-align: left;
+  background: url("../img/Vector.svg") no-repeat 80% 50% #ee4f3c;
+  border-radius: 10px;
+  border: none;
+
+  font-family: "Axiforma", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.subscribe-block__btn:hover {
+  border: 1px #fff solid;
+  transform: scale(1.1);
+}
+
+.subscribe-block__btn:active {
+  transform: scale(0.85);
+}
+
+
+
+.btn-view {
+  position: relative;
+  font-family: "Axiforma", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 39px;
+  color: white;
+  text-decoration: none;
+
+  max-width: 150px;
+  width: fit-content;
+
+
+  margin: 70px auto 0 auto;
+  cursor: pointer;
+}
+
+.btn-view::after{
+  position: absolute;
+
+  content: "";
+
+  top: 5px;
+  left: 110%;
+  right: 0;
+  bottom: 0;
+
+  background-image: url("../img/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+#hide.btn-view::after{
+  transform: rotate(90deg);
+}
+#show.btn-view::after{
+  transform: rotate(-90deg);
+
+}

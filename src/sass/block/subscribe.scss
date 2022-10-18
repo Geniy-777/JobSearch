@@ -1,0 +1,83 @@
+.subscribe {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .background {
+        width: 2400px;
+        height: 400px;
+        top: 100px;
+        left: -30%;
+    }
+
+    .subscribe__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1140px;
+
+        .subscribe__block {
+            position: relative;
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 1170px;
+            height: 400px;
+
+            background: #EE4F3C;
+            border-radius: 20px;
+
+            .background-points{
+                top: 280px;
+                right: 0;
+                left: 20px;
+                width: 150px;
+                height: 150px;
+                .point{
+                    background-color: #fff;
+                    margin: 0 22px 22px 0;
+                }
+            }
+            .subscribe-description__block{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .subscribe-block__input{
+                    width: 770px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    background-color: #FFFFFF;
+                    border-radius: 10px;
+
+                    .subscribe-block-input__text{
+                        font-family: 'Axiforma';
+                        font-weight: 300;
+                        font-size: 16px;
+                        color: #5D5D61;
+                        border: none;
+                        width: 530px;
+                        height: 70px;
+                        padding: 5px 15px;
+                    }
+                    
+                    .subscribe-block-input__text:focus{
+                        outline: 0;
+                    }
+
+                    .subscribe-block-input__text:active{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

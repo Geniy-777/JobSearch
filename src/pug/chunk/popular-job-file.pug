@@ -1,0 +1,52 @@
+
+section#Jobs.popular-job-file
+    .background-popular-job
+    h2.section-title Popular Job Posts
+    .carts-job__container.popular
+        - var carts = [{member1:"Slack-member-1.png",member2:"Slack-member-2.png",name:"Slack", title:"Sr. Product Designer", text:"Full Time - New York City",prise:"$10 - $25"},{member1:"Google-member-1.png",member2:"Google-member-2.png",name:"Google", title:"UX Researcher", text:"Full Time - United States",prise:"$10 - $25"},{member1:"Indeed-member-1.png",member2:"Indeed-member-2.png",name:"Indeed", title:"Project Manager", text:"Full Time - Singapore",prise:"$10 - $25"}]
+        each cart of carts
+            .cart.popular(class=cart.name)
+                .top-side-bar
+                    .logo-cart-icon
+                    h4.subtitle= cart.name
+                    .members 
+                        .member
+                            img.img-member(src="img/"+cart.member1)
+                        .member
+                            img.img-member(src="img/"+cart.member2)
+                        .member.more
+                            p.member-text 5+
+                .desc-cart
+                    h3.title-cart= cart.title 
+                    p.text-cart= cart.text
+                .feed
+                    .feed-item
+                        p.feed-item-text Remote
+                    .feed-item 
+                        p.feed-item-text Anywhere
+                    p.feed-text= cart.prise
+    -for(let i = 0; i < 3; i++)
+        .carts-job__container.additional(id=i)
+            //- TODO * выпадающие карточки
+            each cart of carts
+                .cart.additional(class=cart.name)
+                    .top-side-bar
+                        .logo-cart-icon
+                        h4.subtitle= cart.name
+                        .members 
+                            .member
+                                img.img-member(src="img/"+cart.member1)
+                            .member
+                                img.img-member(src="img/"+cart.member2)
+                            .member.more
+                                p.member-text 5+
+                    .desc-cart
+                        h3.title-cart= cart.title 
+                        p.text-cart= cart.text
+                    .feed
+                        .feed-item
+                            p.feed-item-text Remote
+                        .feed-item 
+                            p.feed-item-text Anywhere
+                        p.feed-text= cart.prise
+    a#hide.btn-view View all

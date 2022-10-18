@@ -1,0 +1,23 @@
+[
+    {
+        "url":"img/feed-back/maria-jannat.png",
+        "text":"Very decent services & care about my health. Really happy with his advice. Lorem Ipsum is simply dummy text of the printing and typesetting industry Very decent services & care about my health. Really happy with his advice.",
+        "name":"Maria Jannat",
+        "position":"Content Writer",
+        "mark": 5
+    },
+    {
+        "url":"img/feed-back/mithela.png",
+        "text":"Very decent services & care about my health. Really happy with his advice. Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "name":"Mithela",
+        "position":"UI Designer",
+        "mark": 5
+    },
+    {
+        "url":"img/feed-back/adam.png",
+        "text":"Very decent services & care about my health. Really happy with his advice. Lorem Ipsum is simply dummy text of the printing and typesetting industry Very decent services & care about my health. Really happy with his advice.",
+        "name":"Adam",
+        "position":"Developer",
+        "mark": 5
+    }
+]

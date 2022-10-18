@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.logo {
+  font-family: "Perpetua";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #232443;
+}
+
+.special {
+  color: red;
+}
+
+.header__navigation {
+  max-width: 380px;
+  width: 100%;
+  padding: 2px 5px;
+}
+
+.header__navigation .list-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.header__navigation .list-item {
+  font-family: "Axiforma", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #000;
+  cursor: pointer;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

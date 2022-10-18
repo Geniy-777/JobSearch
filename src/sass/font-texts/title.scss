@@ -1,0 +1,120 @@
+.title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 95px;
+
+  @include ph {
+    font-weight: 400;
+  }
+}
+
+.desc-title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 18px;
+  color: #353540;
+}
+
+.section-title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+
+  padding: 5% 10px 5px 10px;
+}
+
+.title-cart {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.job-categories-title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #353540;
+}
+
+.item-description__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 20px;
+  color: #353540;
+  margin-top: 50px;
+}
+
+.new-job__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 48px;
+  color: #353540;
+}
+
+.post-job-description__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 48px;
+  color: #353540;
+  max-width: 350px;
+}
+
+.feed-back__title {
+  max-width: 440px;
+  width: fit-content;
+
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 48px;
+  color: #353540;
+}
+
+.subscribe-block__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+  max-width: 515px;
+}
+
+.footer-contacts__title {
+  font-family: "Perpetua";
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #353540;
+  user-select: none;
+  margin-bottom: 10px;
+
+  & strong {
+    color: red;
+    font-weight: 700;
+    font-size: 36px;
+  }
+}
+
+.footer-explore__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 20px;
+  color: #353540;
+  user-select: none;
+}
+
+.footer-links__title {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 20px;
+  color: #353540;
+  user-select: none;
+}
+
+.news-description__title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 16px;
+  color: #353540;
+}

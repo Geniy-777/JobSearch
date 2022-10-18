@@ -1,0 +1,237 @@
+.find-apply {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.find-apply-text {
+  display: block;
+  max-width: 660px;
+  padding: 0 15px;
+}
+
+.text {
+  margin: 30px 5px;
+
+  font-family: "Axiforma",sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #5d5d61;
+}
+
+.search-block {
+  display: flex;
+  box-shadow: 0px 30px 70px rgba(204, 204, 204, 0.5);
+  border-radius: 10px;
+  background: none;
+  width: fit-content;
+}
+
+.input-text-search {
+  background-color: #fff;
+  padding-left: 50px;
+  height: 70px;
+  width: 225px;
+  font-family: 'Axiforma', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #5D5D61;
+}
+
+.input-text-search:focus{
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.search-block :nth-child(1) {
+  background: url("../img/icon-loop.svg") no-repeat 10% 50% #fff;
+  border-radius: 10px 0 0 10px;
+  background-clip: padding-box;
+  border: none;
+  margin-right: 2px;
+}
+
+.search-block :nth-child(2) {
+  background: url("../img/icon-location.svg") no-repeat 10% 50% #fff;
+  background-clip: padding-box;
+  border: none;
+}
+
+.imgs-container {
+  position: relative;
+
+  user-select: none;
+  
+  width: 780px;
+  height: 780px;
+}
+
+.bg-for-img-1 {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 70px solid #f5f5f5;
+  border-radius: 50%;
+  z-index: -99999;
+}
+
+.bg-for-img-2 {
+  position: absolute;
+
+  top: 12.5%;
+  left: 12.5%;
+
+  width: 500px;
+  height: 500px;
+
+  border: 70px solid #f5f5f5;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.main-pic {
+  position: absolute;
+
+  top: 0;
+  left: 18%;
+
+  width: 528px;
+  height: 730px;
+
+  z-index: -12;
+  transform: scale(0.2) translateY(200%);
+  transition: all 1s ease;
+}
+
+.cart-pic,
+.icon-pic {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  background-color: #fff;
+
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  box-shadow: 0px 20px 50px #eeeeee;
+}
+
+.person-pic-bg {
+  position: relative;
+
+  margin-top: 10px;
+
+  width: 150px;
+  height: 120px;
+
+  border-radius: 20px;
+}
+
+.mark-pic {
+  position: absolute;
+
+  top: 30%;
+  left: 25%;
+
+  width: 160px;
+  height: 160px;
+}
+
+.person-pic-bg.bg-adam {
+  background-color: #fec247;
+}
+
+.person-pic-bg.bg-maliha {
+  background-color: #6b5acc;
+}
+
+.cart-pic {
+  width: 170px;
+  height: 200px;
+  border-radius: 25px;
+  box-shadow: 0px 20px 50px rgba(204, 204, 204, 0.5);
+  transition: all 1.5s ease-in-out;
+}
+
+.adam {
+  top: 30%;
+  left: 80%;
+  transform: scale(0) translateX(-300px) rotate(45deg);
+}
+
+.maliha {
+  left: 0;
+  top: 57%;
+  transform: scale(0) translateX(300px) rotate(-45deg);
+}
+
+.google,
+.paypal,
+.microphone,
+.smthng {
+  border-radius: 20px;
+
+  width: 84px;
+  height: 84px;
+  z-index: -10;
+  opacity: 0;
+}
+
+.google {
+  transform: rotate(-34.19deg);
+  background: url("../img/google-icon.svg") no-repeat center #fff;
+  background-size: 45%;
+  background-color: #fff;
+  left: 1%;
+  top: 27%;
+  
+  transform: scale(0.5) translateX(600px) translateY(300px) rotate(-180deg);
+}
+
+.microphone {
+  transform: rotate(18.74deg);
+  background: url("../img/microphone-icon.svg") no-repeat center #fff;
+  background-size: 45%;
+  background-color: #fff;
+  left: 23%;
+  top: 3%;
+  
+  transform: scale(0.5) translateX(300px) translateY(500px) rotate(180deg);
+}
+
+.smthng {
+  transform: rotate(15deg);
+  background: url("../img/smthng-icon.svg") no-repeat center #fff;
+  background-size: 45%;
+  background-color: #fff;
+  left: 77%;
+  top: 11%;
+  
+  transform: scale(0.5) translateX(-300px) translateY(500px) rotate(180deg);
+}
+
+.paypal {
+  background: url("../img/paypal-icon.svg") no-repeat center #fff;
+  background-size: 45%;
+  background-color: #fff;
+  left: 85%;
+  top: 65%;
+  
+  transform: scale(0.5) translateX(-300px) translateY(-100px) rotate(198deg);
+}
+
+.icon-pic {
+  box-shadow: 0px 20px 50px rgba(204, 204, 204, 0.5);
+  transition: all 1s ease-in-out;
+}

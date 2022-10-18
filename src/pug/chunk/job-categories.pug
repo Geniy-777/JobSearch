@@ -1,0 +1,17 @@
+section.job-categories#Categories
+    .background-points
+        - for(var i = 0; i < 7; i++)
+            .stroke-points 
+                - for(var j = 0; j < 5; j++)
+                    .point
+    .job-categories-content
+        h2.job-categories-title Job Categories
+        .job-categories__carts
+            each category of job_categories
+                .job-categories-carts__item(class=category.class)
+                    .job-categories-item__logo
+                        img.item-logo__img(src= category.url)
+                        img.item-logo__img-revese(src= category.url_reverse)
+                    .job-categories-item__description
+                        h4.item-description__title= category.title
+                        p.item-description__text= category.text

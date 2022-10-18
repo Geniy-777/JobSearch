@@ -1,0 +1,48 @@
+$base-font-size: 24px;
+
+@mixin ph {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: Georgia, sans-serif;
+
+    overflow-x: hidden;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.main-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.background{
+    position: absolute;
+
+    width: 650px;
+    height: 1000%;
+
+    bottom: 100px;
+    left: -25%;
+
+    opacity: 0.1;
+    z-index: -999;
+    background: url("../img/background.png") ;
+}
+
+
+
+@import "./block/*.scss";
+@import "./font-texts/*.scss";

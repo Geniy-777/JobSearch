@@ -1,0 +1,9 @@
+header.container
+    .header__content
+        a.logo(href="#Home") j<special class="special">o</special>bly
+        nav.header__navigation
+            ul.list-items
+                each item in ['Home','Categories','Service','Jobs']
+                    li.list-item
+                        a(href="#"+item)= item
+        button.btn-post Post a Vacancy 

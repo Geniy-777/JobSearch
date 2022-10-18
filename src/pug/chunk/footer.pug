@@ -1,0 +1,57 @@
+footer.footer
+  .footer-container
+    .background-points.bg-4x7
+      - for(var i = 0; i < 4; i++)
+          .stroke-points 
+              - for(var j = 0; j < 7; j++)
+                  .point
+
+    .background-points.bg-8x7
+      - for(var i = 0; i < 8; i++)
+          .stroke-points 
+              - for(var j = 0; j < 7; j++)
+                  .point
+
+    .footer__content 
+      .footer__contants-container 
+        h3.footer-contacts__title J<strong>o</strong>bply
+        p.footer-contacts__text 152/3 , Western Road, New York
+        a.footer-contacts__call-us Call Us: +99-8569-5234
+        .footer-contacts__social-container 
+          a.contacts-social__item.facebook
+          a.contacts-social__item.twitter
+          a.contacts-social__item.in
+      -var explore = {"title":"Explore", "links":["Featured Job","Recent Job","Total Candidats","Support"]}
+      .footer__explore-container 
+        h4.footer-explore__title= explore.title
+        ul.footer-explore__list-links
+          each link of explore.links
+            li
+              a.footer-explore__link= link
+
+      //- *Useful Link
+      -var useful = {"title":"Useful Link", "links":["About Us Job","Blog","Company","Contact Us"]}
+      .footer__useful-links-container 
+        h4.footer-links__title= useful.title
+        ul.footer-links__list
+          each link of useful.links
+            li
+              a.footer-links__link= link
+
+      .footer__news-container 
+        -var news_ = [{"url":"img/footer/understanding_cybersecurity.png", "desc_title":"Understanding the Cybersecurity Landscape in 2021","text":"21 June, 2021"},{"url":"img/footer/design_for_maximum_trust.png","desc_title":"How to Design for Maximum Product Trust", "text":"21 June, 2021"}]
+        -var news_title = "Latest News"
+        h4.footer-links__title= news_title
+        .footer-news__link-container
+          each n in news_
+            a.footer-news__link
+              .footer-links__news-img 
+                img.footer-news__img(src=n.url)
+              .footer-links__news-description 
+                p.news-description__title= n.desc_title
+                p.news-description__text= n.text
+            
+
+
+    .copyright 
+      p.copyright-text Copyright 2021, All right reserved

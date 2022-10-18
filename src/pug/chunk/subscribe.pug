@@ -1,0 +1,19 @@
+section.subscribe 
+    .background
+    .subscribe__content 
+        .subscribe__block 
+            .background-points
+                - for(var i = 0; i < 4; i++)
+                    .stroke-points 
+                        - for(var j = 0; j < 4; j++)
+                            .point
+            .background-lines 
+                .background-line.bg-ln-1
+                .background-line.bg-ln-2
+                .background-line.bg-ln-3
+                .background-line.bg-ln-4
+            .subscribe-description__block
+                h3.subscribe-block__title Subscribe to get update vacancy post
+                .subscribe-block__input
+                    input.subscribe-block-input__text(type="text" placeholder="infomail856@gmail.com")
+                    button.subscribe-block__btn Subscribe

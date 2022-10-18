@@ -1,0 +1,128 @@
+.job-categories {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  margin-top: 150px;
+}
+
+.background-points {
+  position: absolute;
+  top: 80%;
+  left: -10%;
+  width: 190px;
+  height: 266px;
+}
+
+.stroke-points {
+  display: flex;
+}
+
+.point {
+  width: 8px;
+  height: 8px;
+  background-color: gray;
+  margin: 0 30px 30px 0;
+  border-radius: 50%;
+}
+
+.job-categories-content {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+}
+
+.job-categories__carts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-categories-carts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+
+  width: 270px;
+  height: 270px;
+
+  padding: 30px 25px 50px 25px;
+  margin: 15px;
+
+  transform: scale(1);
+
+  cursor: pointer;
+
+  transition: all 0.25s ease-in-out;
+}
+
+.job-categories-carts__item:hover {
+  box-shadow: 0px 70px 70px #eeeeee;
+}
+
+.job-categories-carts__item:active {
+  transform: scale(0.85);
+}
+
+.job-categories-carts__item.active {
+    box-shadow: 0px 70px 70px #eeeeee;
+  .job-categories-item__logo {
+    position: relative;
+    background-color: #ee4f3c;
+
+    .item-logo__img{
+        opacity: 0;
+    }
+    .item-logo__img-revese {
+        opacity: 1;
+    }
+
+  }
+}
+
+.item-logo__img{
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.job-categories-item__logo {
+  position: relative;
+  border-radius: 50%;
+  background-color: #fff8f8;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  transition: background-color .3s ease-in-out;
+
+  .item-logo__img-revese {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    transition: all .3s ease-in-out;
+  }
+}
+
+.job-categories-carts__item:nth-child(1) {
+  margin-left: 0;
+}
+.job-categories-carts__item:nth-child(5) {
+  margin-left: 0;
+}
+.job-categories-carts__item:nth-child(4) {
+  margin-right: 0;
+}
+.job-categories-carts__item:nth-child(8) {
+  margin-right: 0;
+}

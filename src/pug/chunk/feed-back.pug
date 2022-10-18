@@ -1,0 +1,17 @@
+section.feed-back 
+    .feed-back__content 
+        h2.feed-back__title Great Feedback From Candidates
+        ul.slider#lightSlider
+            each block of person_feed_back
+                li.feed-back__block
+                    .feed-back__icon
+                    p.feed-back__text= block.text
+                    .feed-back__person
+                        .feed-back-person__img 
+                            img.person-img(src=block.url, alt="")
+                        .feed-back-description-person 
+                            .feed-back-person__name= block.name
+                            .feed-back-person__position= block.position
+                            .feed-back-person__mark
+                                -for(let i = 0; i < block.mark; i++)
+                                    img.mark(src="img/mark_star.png") 

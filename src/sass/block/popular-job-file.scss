@@ -1,0 +1,251 @@
+.popular-job-file {
+  display: flex;
+  position: relative;
+
+  height: 650px;
+  padding-bottom: 15px;
+
+  flex-direction: column;
+  top: -50px;
+
+  transition: height 1s ease-in-out;
+}
+
+.background-popular-job {
+  position: absolute;
+
+  top: 0;
+  left: -360px;
+
+  width: 2400px;
+  height: 100%;
+
+  background: url("../img/background.png");
+  z-index: -1;
+
+  opacity: 0.2;
+}
+
+.popular-job-file::before {
+  content: "";
+  position: absolute;
+
+  width: 2400px;
+  height: 100%;
+
+  top: 0;
+  left: -360px;
+
+  z-index: -11;
+  background-color: #232443;
+}
+
+.carts-job {
+  display: flex;
+  flex-direction: column;
+}
+.carts-job__container {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+
+  &.additional {
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+    margin: 0;
+    transition: all 1s ease-in-out;
+
+    &.active{
+      transform: none;
+      opacity: 1;
+      display: flex;
+      margin-top: 50px;
+
+    }
+  }
+}
+
+.cart {
+  display: block;
+
+  width: 370px;
+  height: 250px;
+
+  padding: 20px;
+  margin: 0 20px;
+
+  backdrop-filter: blur(15px);
+  /*- Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+.top-side-bar {
+  display: flex;
+
+  align-items: center;
+  justify-content: start;
+}
+
+.logo-cart-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 4px 50px rgba(153, 153, 153, 0.25);
+}
+
+.members {
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 40px;
+
+  margin-left: auto;
+}
+
+.member.more {
+  text-align: center;
+  background-color: #fff0ee;
+  border: 1px #fff solid;
+  right: 0;
+}
+
+.member {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.member .img-member {
+  max-width: 40px;
+  width: 100%;
+}
+
+.member:nth-child(1) {
+  z-index: 3;
+  right: 46px;
+}
+
+.member:nth-child(2) {
+  z-index: 4;
+  right: 23px;
+}
+
+.member:nth-child(3) {
+  z-index: 5;
+}
+
+.desc-cart {
+  margin: 20px 0 30px 0;
+}
+
+.feed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feed-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+  height: 35px;
+
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+// *    Cart Slack
+.cart.Slack {
+  background: rgba(238, 79, 60, 0.5);
+  color: #fff;
+}
+
+.cart.Slack .logo-cart-icon {
+  background: url("../img/smthng-icon.svg") #fff no-repeat 50%;
+}
+
+.cart.Slack .subtitle {
+  color: #fff;
+  font-family: "Axiforma", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  justify-self: auto;
+
+  margin-left: 15px;
+}
+
+.cart.Slack .member:nth-child(1) {
+  z-index: 3;
+  right: 46px;
+  background-image: url("../img/Slack-member-1.png");
+}
+
+.cart.Slack .member:nth-child(2) {
+  z-index: 4;
+  right: 23px;
+  background-image: url("../img/Slack-member-2.png");
+}
+
+.cart.Slack .feed-item {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+//* Cart Google
+.cart.Google {
+  background: #ffffff;
+  backdrop-filter: blur(15px);
+  /*- Note: backdrop-filter has minimal browser support */
+}
+
+.cart.Google .logo-cart-icon {
+  background: url("../img/google-icon.svg") #fff no-repeat 50%;
+}
+
+.cart.Google .member:nth-child(1) {
+  z-index: 3;
+  right: 46px;
+  background-image: url("../img/Google-member-1.png");
+}
+
+.cart.Google .member:nth-child(2) {
+  z-index: 4;
+  right: 23px;
+  background-image: url("../img/Google-member-2.png");
+}
+
+// *Cart Indeed
+.cart.Indeed {
+  background: #ffffff;
+}
+
+.cart.Indeed .logo-cart-icon {
+  background: url("../img/microphone-icon.svg") #fff no-repeat 50%;
+}
+
+.cart.Indeed .member:nth-child(1) {
+  z-index: 3;
+  right: 46px;
+  background-image: url("../img/Indeed-member-1.png");
+}
+
+.cart.Indeed .member:nth-child(2) {
+  z-index: 4;
+  right: 23px;
+  background-image: url("../img/Indeed-member-2.png");
+}

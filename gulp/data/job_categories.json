@@ -1,0 +1,58 @@
+[
+    {
+        "url":"img/job-categories-icons/Accouting.svg",
+        "url_reverse":"img/job-categories-icons/Accouting-white.svg",
+        "class":"Accouting",
+        "title":"Accouting & Finance",
+        "text":"125 Job Vacancy"
+    },
+    {
+        "url":"img/job-categories-icons/Design.svg",
+        "url_reverse":"img/job-categories-icons/Design-white.svg",
+        "class":"Design",
+        "title":"UI/UX Design",
+        "text":"52 Job Vacancy"
+    },
+    {
+        "url":"img/job-categories-icons/Writing.svg",
+        "url_reverse":"img/job-categories-icons/Writing-white.svg",
+        "class":"Writing",
+        "title":"Content Writing",
+        "text":"150 Job Vacancy"
+    },
+    {
+        "url":"img/job-categories-icons/Accouting-2.svg",
+        "url_reverse":"img/job-categories-icons/Accouting-2-white.svg",
+        "class":"Accouting-2",
+        "title":"Accouting & Finance",
+        "text":"125 Job Vacancy"
+    },
+    {
+        "url":"img/job-categories-icons/Digital.svg",
+        "url_reverse":"img/job-categories-icons/Digital-white.svg",
+        "class":"Digital",
+        "title":"Digital Marketing",
+        "text":"150 Job Vacancy"
+    },
+    {
+        "url":"img/job-categories-icons/Technical.svg",
+        "url_reverse":"img/job-categories-icons/Technical-white.svg",
+        "class":"Technical",
+        "title":"Technical Support",
+        "text":"350 Job Vacancy"
+    },
+    {
+        "url":"img/job-categories-icons/Humans.svg",
+        "url_reverse":"img/job-categories-icons/Humans-white.svg",
+        "class":"Humans",
+        "title":"Human Resource",
+        "text":"35 Job Vacancy"
+    },
+    {
+        "url":"img/job-categories-icons/Art.svg",
+        "url_reverse":"img/job-categories-icons/Art-white.svg",
+        "class":"Art",
+        "title":"Art & Illustration",
+        "text":"52 Job Vacancy"
+    }
+]
