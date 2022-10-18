@@ -1,5 +1,5 @@
 
-const buildFolder = "./public";
+const buildFolder = "./docs";
 const srcFolder = "./src/";
 
 export default {
