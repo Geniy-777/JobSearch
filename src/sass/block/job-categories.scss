@@ -4,6 +4,14 @@
 
   position: relative;
   margin-top: 150px;
+
+  @include header-width-tablet{
+
+  }
+
+  @include header-width-phone{
+    
+  }
 }
 
 .background-points {

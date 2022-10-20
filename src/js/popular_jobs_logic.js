@@ -4,9 +4,14 @@ $(document).ready(function () {
     //- Получение статуса контента (развернуты или свернутый)
     let btnStatus = $(this).attr("id") === "hide" ? false : true;
 
-
+    let parent_height;
     //- Вычисление высоты контента
-    const parent_height = parseInt($(".carts-job__container.additional").length) * 300;
+    if (!window.matchMedia('(max-width: 1230px)').matches) {
+      parent_height = parseInt($(".carts-job__container.additional").length) * 300;
+    }
+    else{
+      parent_height = parseInt($(".carts-job__container.additional").length) * 860;
+    }
     const current_parent_height = $(this).parent().height();
 
     //- Изменение высоты контента
@@ -43,7 +48,7 @@ $(document).ready(function () {
     } else {
 
       setTimeout(() => {
-        $(this).parent().css(`height`, `635px`);
+        $(this).parent().css(`height`, `fit-content`);
         $(this).animate({
           "margin-top": -parent_height - 50 + "px"
         }, 1000)
