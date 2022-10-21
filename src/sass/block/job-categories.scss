@@ -5,8 +5,28 @@
   position: relative;
   margin-top: 150px;
 
+  @media (max-width:1200px) {
+    .job-categories__carts .job-categories-carts__item{
+      margin: 15px;
+    }
+  }
+  @media (max-width:660px) {
+    .job-categories__carts {
+      justify-content: center;
+    }
+    .job-categories-content{
+      align-items: center;
+    }
+  }
   @include header-width-tablet{
+    padding-left: 20px;
+    padding-right: 20px;
 
+    
+
+    .background-points{
+      display: none;
+    }
   }
 
   @include header-width-phone{
@@ -46,6 +66,8 @@
 .job-categories__carts {
   display: flex;
   flex-wrap: wrap;
+
+  align-items: center;
 }
 
 .job-categories-carts__item {

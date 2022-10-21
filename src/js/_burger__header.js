@@ -1,4 +1,4 @@
-$(() => {
+$(document).ready(function() {
   $(".burger-menu").on("click", function () {
 
     $(this).attr("id") === "hide" ? $(this).attr("id","show") : $(this).attr("id","hide");

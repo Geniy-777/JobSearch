@@ -25,5 +25,5 @@ export default () => {
         }))
         .pipe(gulpif(app.isProd,babel()))
         .pipe(gulpif(app.isProd,webpack(app.webpack)))
-        .pipe(gulp.dest(path.js.dest, { sourcemaps: app.isDev }))
+        .pipe(gulp.dest(path.js.dest, { sourcemaps: true }))
 }

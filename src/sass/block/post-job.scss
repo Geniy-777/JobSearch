@@ -9,14 +9,33 @@
         height: 650px;
     }
 
+    @include header-width-tablet {
+        .post-job-description__text{
+            font-size: 22px;
+        }
+      }
+
     .post-job__content {
         display: flex;
         margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap-reverse;
 
         gap: 100px;
         align-items: center;
         justify-content: center;
 
+        &>*{
+            margin: 0 10px;
+        }
+
+        .post-job__description{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
         .post-job__media {
             overflow: hidden;
             position: relative;
@@ -24,6 +43,11 @@
             height: 750px;
             border-radius: 30px;
             background-color: #000;
+
+            @include header-width-tablet{
+                width: 71vw;
+                height: 94vw;
+            }
 
             iframe{
                 position: absolute;

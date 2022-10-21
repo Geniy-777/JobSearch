@@ -1,6 +1,7 @@
 .popular-job-file {
   display: flex;
   position: relative;
+  max-width: none;
 
   height: fit-content;
   padding-bottom: 35px;
@@ -9,6 +10,10 @@
   top: -50px;
 
   transition: height 1s ease-in-out;
+
+  .section-title{
+    margin-left: 7%;
+  }
 
   @media (max-width:1230px) {
     align-items: center;
@@ -23,15 +28,11 @@
     }
   }
   @include header-width-tablet{
-    .section-title{
-      width: fit-content;
-    }
+    
 
   }
 
-  @include header-width-phone{
-
-  }
+  
 }
 
 .background-popular-job {
@@ -70,7 +71,7 @@
 .carts-job__container {
   display: flex;
   align-self: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   margin-top: 50px;
 

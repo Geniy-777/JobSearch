@@ -29,9 +29,27 @@ html{
     scroll-behavior: smooth;
 }
 
-.main-container{
+main{
+    overflow: hidden;
+}
+
+section{
     max-width: 1440px;
     margin: 0 auto;
+
+   
+
+    @include header-width-tablet{
+        .section-title{
+          font-size: 42px;
+        }
+    }
+
+    @include header-width-phone{
+        .section-title{
+          font-size: 35px;
+        }
+    }
 }
 
 .background{

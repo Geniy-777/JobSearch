@@ -2,8 +2,8 @@ section.post-job
     .background
     .post-job__content 
         .post-job__media 
-            //- iframe.media__item(src=posts_job[0].url, title= posts_job.url,  frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+            iframe.media__item(src=posts_job[0].url, title= posts_job.url,  frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
         .post-job__description 
-            h2.post-job-description__title= posts_job[0].title
+            h2.section-title.post-job-description__title= posts_job[0].title
             p.post-job-description__text= posts_job[0].text
             button.btn-create-account Post a Job
