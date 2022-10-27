@@ -5,11 +5,15 @@
 
     .background {
         top: -100px;
-        width: 2400px;
+        width: 100vw;
         height: 650px;
     }
 
     @include header-width-tablet {
+        .background{
+            left: 0;
+            
+        }
         .post-job-description__text{
             font-size: 22px;
         }

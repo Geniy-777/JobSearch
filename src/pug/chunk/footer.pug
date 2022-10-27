@@ -21,22 +21,24 @@ footer.footer
           a.contacts-social__item.facebook
           a.contacts-social__item.twitter
           a.contacts-social__item.in
-      -var explore = {"title":"Explore", "links":["Featured Job","Recent Job","Total Candidats","Support"]}
-      .footer__explore-container 
-        h4.footer-explore__title= explore.title
-        ul.footer-explore__list-links
-          each link of explore.links
-            li
-              a.footer-explore__link= link
 
-      //- *Useful Link
-      -var useful = {"title":"Useful Link", "links":["About Us Job","Blog","Company","Contact Us"]}
-      .footer__useful-links-container 
-        h4.footer-links__title= useful.title
-        ul.footer-links__list
-          each link of useful.links
-            li
-              a.footer-links__link= link
+      .footer__links-container
+        -var explore = {"title":"Explore", "links":["Featured Job","Recent Job","Total Candidats","Support"]}
+        .footer__explore-container 
+          h4.footer-explore__title= explore.title
+          ul.footer-explore__list-links
+            each link of explore.links
+              li
+                a.footer-explore__link= link
+
+        //- *Useful Link
+        -var useful = {"title":"Useful Link", "links":["About Us Job","Blog","Company","Contact Us"]}
+        .footer__useful-links-container 
+          h4.footer-links__title= useful.title
+          ul.footer-links__list
+            each link of useful.links
+              li
+                a.footer-links__link= link
 
       .footer__news-container 
         -var news_ = [{"url":"img/footer/understanding_cybersecurity.png", "desc_title":"Understanding the Cybersecurity Landscape in 2021","text":"21 June, 2021"},{"url":"img/footer/design_for_maximum_trust.png","desc_title":"How to Design for Maximum Product Trust", "text":"21 June, 2021"}]
